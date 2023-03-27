@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            position:relative;
+            margin-top: 20%;
+
+            
+        }
+        #wrote{
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            position:relative;
+
+
+        }
+    </style>
+</head>
+<body>  <div1>
+            <div id="div">        
+                <input type="text" placeholder="type" id="input">
+            
+                <input type="button" id="btn" value="click">
+            
+            </div> 
+            <div>   <p id="wrote"></p>
+            </div>
+              
+            
+        </div1>
+
+    <script>
+        let inp=document.getElementById('input')
+        let b=document.getElementById("btn")
+        let w=document.getElementById("wrote")
+
+        b.addEventListener('click',(fun)=>{
+            w.innerHTML=inp.value
+        })
+    </script>
+
+
+    
+</body>
+</html>
